@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 // Clone the GitHub repository
-                git 'https://github.com/your-org-username/flaskr-tutorial.git'
+                git 'https://github.com/mazingira-tech/FlaskNest.git'
             }
         }
         
