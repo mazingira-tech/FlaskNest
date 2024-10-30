@@ -4,8 +4,8 @@ pipeline {
         
         stage('Clone') {
             steps {
-                // Clone the GitHub repository
-                git 'https://github.com/your-org-username/flaskr-tutorial.git'
+                // Clone the GitHub repository with credentials
+                git credentialsId: 'Org-GitHub-Token', url: 'https://github.com/mazingira-tech/FlaskNest.git'
             }
         }
         
