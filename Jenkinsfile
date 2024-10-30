@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 // Clone the GitHub repository with credentials
-                git credentialsId: 'Org-GitHub-Token', url: 'https://github.com/mazingira-tech/FlaskNest.git'
+                git credentialsId: 'jenkins_PAT', url: 'https://github.com/mazingira-tech/FlaskNest.git'
             }
         }
         
